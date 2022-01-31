@@ -20,7 +20,7 @@ export default function MovieDetailsPage() {
 
     return (
         <>
-            <button onClick={() => navigate({pathname: '/movies'})}> Go back</button>
+            <button onClick={() => navigate(-1)}> Go back</button>
             <MovieInfo>
                 <div>
                     <Img src={`https://image.tmdb.org/t/p/w500${movieInfo.poster_path}`} alt={movieInfo.title} />
